@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+
+# 維護模式請用：
+#   ./scripts/set-maintenance.sh on|off portal
+# 會寫入 portal/_redirects

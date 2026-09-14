@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!portal'"
+
+[dev]
+  publish = "."
+
+# 維護模式請用：
+#   ./scripts/set-maintenance.sh on|off
+# 會寫入根目錄 _redirects（勿手改 .on / .off 以外的邏輯）
