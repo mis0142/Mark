@@ -57,7 +57,7 @@
         if (id == null || id === "") return "";
         return `
           <article class="property-card">
-            <a href="property-detail.html?id=${encodeURIComponent(id)}">
+            <a href="/property-detail.html?id=${encodeURIComponent(id)}">
               <div class="card-image">
                 ${img ? `<img src="${escapeHtml(img)}" alt="" loading="lazy" />` : `<div class="img-placeholder"></div>`}
               </div>
