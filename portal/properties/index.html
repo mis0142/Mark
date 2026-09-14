@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>租賃物件 — 三峽住旺房屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/properties.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="site-header-inner">
+      <a aria-label='三峽住旺房屋首頁' class='brand' href='/'>
+        三峽<em>住旺</em>房屋
+        <span>包租代管</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="header-panel" id="site-nav">
+        <nav class="site-nav" aria-label="主選單">
+          <a href='/'>首頁</a>
+          <a aria-current='page' href='/properties'>租賃物件</a>
+        </nav>
+        <div class="header-actions">
+          <a class='header-cta' href='/properties'>尋找物件</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <header class="page-intro">
+      <ol class="breadcrumb" aria-label="麵包屑">
+        <li><a href='/'>首頁</a></li>
+        <li aria-current="page">租賃物件</li>
+      </ol>
+      <p class="eyebrow">Taiwan Rentals</p>
+      <h1>租賃物件</h1>
+      <p class="tagline">精選住宅與商用空間，清楚呈現面積、租金與地段資訊。</p>
+    </header>
+
+    <section class="filter-bar" aria-label="物件篩選">
+      <h2 class="filter-bar-title">篩選條件</h2>
+      <form id="filter-form" class="filter-form">
+        <label>城市 <input type="text" name="city" placeholder="例：台北市" /></label>
+        <label>行政區 <input type="text" name="district" placeholder="例：大安區" /></label>
+        <label>租金下限 <input type="number" name="minRent" min="0" placeholder="NTD" /></label>
+        <label>租金上限 <input type="number" name="maxRent" min="0" placeholder="NTD" /></label>
+        <label>坪數下限 <input type="number" name="minPing" min="0" step="0.1" /></label>
+        <label>坪數上限 <input type="number" name="maxPing" min="0" step="0.1" /></label>
+        <label>房型 <input type="text" name="layout" placeholder="例：2房1廳" /></label>
+        <div class="filter-actions">
+          <button type="reset" id="filter-reset">重設</button>
+          <button type="submit">開始尋找</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="property-list-section">
+      <div class="list-toolbar">
+        <p id="list-status" class="list-status" aria-live="polite"></p>
+      </div>
+      <div id="property-grid" class="property-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class='footer-logo' href='/'>三峽<em>住旺</em>房屋</a>
+          <p>個人與小型代租代管的招租前台，精選物件、清楚資訊，協助您找到理想居所。</p>
+        </div>
+        <div class="footer-col">
+          <h3>瀏覽</h3>
+          <ul>
+            <li><a href='/'>首頁</a></li>
+            <li><a href='/properties'>租賃物件</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>服務</h3>
+          <ul>
+            <li><a href='/properties'>瀏覽精選物件</a></li>
+            <li><a href='/properties'>預約看屋</a></li>
+            <li><a href='/properties'>物件諮詢</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>聯絡資訊</h3>
+          <ul class="footer-contact">
+            <li>服務時間　週一至週五 09:30–18:30</li>
+            <li>服務範圍　個人／小型代租代管</li>
+            <li><a href='/properties'>線上瀏覽物件並留下預約</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>&copy; <span class="footer-year"></span> 三峽住旺房屋. All rights reserved.</small>
+        <small>理想居所，從這裡開始</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js?v=9"></script>
+  <script src="js/properties.js?v=9"></script>
+  <script>
+    document.querySelectorAll(".footer-year").forEach(function (el) {
+      el.textContent = new Date().getFullYear();
+    });
+    (function () {
+      var header = document.getElementById("site-header");
+      var toggle = document.querySelector(".nav-toggle");
+      var panel = document.getElementById("site-nav");
+      if (!header || !toggle || !panel) return;
+      toggle.addEventListener("click", function () {
+        var open = !header.classList.contains("is-open");
+        header.classList.toggle("is-open", open);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        toggle.setAttribute("aria-label", open ? "關閉選單" : "開啟選單");
+      });
+    })();
+  </script>
+</body>
+</html>

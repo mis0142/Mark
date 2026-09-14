@@ -1,8 +1,8 @@
 [build]
   publish = "."
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!portal'"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
+[dev]
+  publish = "."
+
+# Keep portal/ available under /portal for convenience, but primary portal is separate site.
