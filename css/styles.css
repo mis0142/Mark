@@ -121,16 +121,16 @@ header.site {
 }
 
 .brand .word {
-  font-family: "Outfit", "Noto Sans TC", sans-serif;
-  font-weight: 800;
-  font-size: 19px;
-  letter-spacing: 0.02em;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Outfit", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.08em;
   color: var(--white);
 }
 
 .brand .word b {
   color: var(--gold);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .brand .zh {
@@ -344,13 +344,13 @@ nav.links a:hover {
 }
 
 .brand-mark {
-  font-family: "Outfit", "Noto Sans TC", sans-serif;
-  font-weight: 800;
-  font-size: 15px;
-  letter-spacing: 0.18em;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Outfit", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.28em;
   color: var(--gold);
   margin: 0 0 18px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .hero h1 {
