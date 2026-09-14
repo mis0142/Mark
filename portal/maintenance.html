@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>系統暫停服務｜三峽住旺房屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0b1f38;
+      --blue: #3d9be9;
+      --orange: #f07828;
+      --paper: #f4f7fa;
+      --ink: #0a1628;
+      --muted: #5c6770;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 70% 55% at 85% 15%, rgba(61, 155, 233, 0.22), transparent 55%),
+        radial-gradient(ellipse 60% 45% at 15% 85%, rgba(240, 120, 40, 0.16), transparent 50%),
+        linear-gradient(165deg, #050505 0%, #0b1f38 48%, #143456 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      width: min(520px, 100%);
+      background: rgba(244, 247, 250, 0.97);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      padding: 48px 40px;
+      text-align: center;
+    }
+    .brand {
+      font-family: "Noto Serif TC", "Songti TC", serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      margin: 0 0 28px;
+    }
+    .brand em {
+      font-style: normal;
+      color: var(--blue);
+    }
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 22px;
+      border: 2px solid var(--orange);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--navy);
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.45rem, 4vw, 1.85rem);
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+      line-height: 1.4;
+    }
+    p {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+    .meta {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #dde4eb;
+      font-size: 0.82rem;
+      color: #8a939c;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="maintenance-title">
+    <p class="brand">三峽<em>住旺</em>房屋</p>
+    <div class="icon" aria-hidden="true">!</div>
+    <h1 id="maintenance-title">系統暫停服務，請稍後再試</h1>
+    <p>網站目前進行維護或暫時不對外開放。<br />造成不便，敬請見諒。</p>
+    <p class="meta">Sanxia Zhuwang Realty · Maintenance</p>
+  </main>
+</body>
+</html>

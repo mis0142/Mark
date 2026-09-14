@@ -5,4 +5,6 @@
 [dev]
   publish = "."
 
-# Keep portal/ available under /portal for convenience, but primary portal is separate site.
+# 維護模式請用：
+#   ./scripts/set-maintenance.sh on|off
+# 會寫入根目錄 _redirects（勿手改 .on / .off 以外的邏輯）

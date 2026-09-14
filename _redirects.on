@@ -1,0 +1,4 @@
+# 維護模式：全站導向維護頁（503）
+# 允許直接開啟維護頁本身
+/maintenance.html  /maintenance.html  200
+/*                 /maintenance.html  503!
