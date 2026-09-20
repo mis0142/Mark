@@ -1,0 +1,28 @@
+:root {
+  /* Aligned with homepage banner: deep navy, sky blue, warm orange */
+  --color-bg: #f4f7fa;
+  --color-bg-deep: #e8eef4;
+  --color-surface: #ffffff;
+  --color-text: #0a1628;
+  --color-muted: #5c6770;
+  --color-subtle: #8a939c;
+  --color-accent: #0b1f38;
+  --color-accent-hover: #143456;
+  --color-brand-blue: #3d9be9;
+  --color-brand-blue-soft: rgba(61, 155, 233, 0.16);
+  --color-brand-orange: #f07828;
+  --color-brand-orange-hover: #ff8a3d;
+  --color-gold: #f07828;
+  --color-gold-soft: rgba(240, 120, 40, 0.16);
+  --color-border: #dde4eb;
+  --color-border-strong: #c2ccd6;
+  --color-hero-ink: #050505;
+  --font-display: "Noto Serif TC", "Source Han Serif TC", "Songti TC", serif;
+  --font-sans: "Noto Sans TC", "Segoe UI", sans-serif;
+  --radius: 2px;
+  --space: 1rem;
+  --max: 1200px;
+  --header-h: 4.5rem;
+  --shadow-soft: 0 12px 40px rgba(11, 31, 56, 0.08);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
