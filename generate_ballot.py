@@ -73,7 +73,7 @@ def render(cols):
   * {{ box-sizing: border-box; }}
   html, body {{
     margin: 0; padding: 0; background: #fff; color: #000;
-    font-family: "Microsoft JhengHei","微軟正黑體","Noto Sans TC","PingFang TC","Heiti TC",sans-serif;
+    font-family: "Microsoft JhengHei","微軟正黑體","Noto Sans TC","WenQuanYi Micro Hei","Droid Sans Fallback","PingFang TC","Heiti TC",sans-serif;
   }}
   .toolbar {{
     max-width: 290mm; margin: 12px auto; padding: 0 8mm;
